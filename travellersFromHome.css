@@ -1,0 +1,68 @@
+/* body { */
+    /* background-image: url("./images/mapimg.jpeg") */
+    /*background-color: #D9CDB8;*/
+/* } */
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container--fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 7px;
+    /* grid-auto-rows: 100px, auto; */
+}
+
+.countriesDIV {
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+a:link {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Color Pallet Option to match mapimg.jpeg
+
+#403C01
+#A6A04E
+#D9CDB8
+#593C22
+#A6774E
+
+/* Color Pallet Option to match exploring.jpeg
+
+#D9C8B4
+#084F8C
+#A66832
+#593723
+#D92929
+
+/* Color Pallet Option to match boysPointingMap.jpeg
+
+#4192D9
+#6AAED9
+#D3D92B
+#D99441
+#BF0404
