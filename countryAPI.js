@@ -36,19 +36,19 @@ async function countryInfo() {
     
     data.forEach((country, index) => {
         
-        if (index < 30) {
+        //if (index < 30) {
 
         let tempFlag = `
             <div class="container">
                 <div class="row">
                     <div class="col">
-                    ${country.flag} ${country.name}
+                    ${country.flag}
                     </div>
                 </div>
             </div>
             `;
             countriesDIV.innerHTML += tempFlag
-        }
+        //}
     });
 
     countriesDIV.addEventListener("click", (e) =>
