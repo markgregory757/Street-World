@@ -36,7 +36,7 @@ async function countryInfo() {
     
     data.forEach((country, index) => {
         
-        //if (index < 30) {
+        // if (index < 30) {
 
         let tempFlag = `
             <div class="container">
