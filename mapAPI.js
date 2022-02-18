@@ -1,14 +1,18 @@
-require([
-	"esri/Map",
-	"esri/views/SceneView",
+
+
+require([   // We use the "require" method to load modules from the JS library. 
+	"esri/Map", // loads code for creating a Map.
+	"esri/views/SceneView", // loads code for viewing the Map in 3D.
 	"esri/layers/TileLayer",
 	"esri/Basemap",
 	"esri/layers/FeatureLayer",
 	"esri/widgets/LayerList",
 	"esri/request",
 	"esri/Graphic",
-	"dojo/domReady!" // will not be called until DOM is ready
-], function (
+	"dojo/domReady!" // instructs teh browser to wait on execution of teh code until the entire page has been loaded
+], 
+// The next lines are callback functions these are called once all the code on the page has loaded. 
+function (
 	Map,
 	SceneView,
 	TileLayer,
@@ -19,13 +23,14 @@ require([
 	Graphic
 	) {
 
+// In this section we have the elements that store the layers displayed in the globe.  
 		const satelliteLayer = new TileLayer({
 			url: "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
 			title: "satellite"
 		  })
 
 		  const fireflyLayer = new TileLayer({
-			url: "https://tiles.arcgis.com/tiles/nGt4QxSblgDfeJn9/arcgis/rest/services/HalfEarthFirefly/MapServer",
+			url: "https://tiles.arcgis.com/https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/vintage-shaded-relief-basemap//nGt4QxSblgDfeJn9/arcgis/rest/services/HalfEarthFirefly/MapServer",
 			title: "half-earth-firefly"
 		  })
 
@@ -43,25 +48,27 @@ require([
 			url: 'https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1'
 		  })
 
+// These lines set the basemap. 
 		const map = new Map({
-			
 			basemap: basemap,
 			layers: [protected, rangelands]
 		});
 
+// Here where we are using the browser's Web Graphics Library(webGL) to render a 3D image on the page,
+// by creating instances to the "SceneView" Class. 
 		const view = new SceneView({
 			map: map,
-			container: "sceneContainer",
+			container: "sceneContainer", // this line sets it in the sceneContainer in the HTML page.
 			environment: {
 				atmosphereEnabled: false,
 				background: {
 				  type: "color",
 				  color: [0,10,16]
 				}
-			  },
-			ui: {
-				components: ["zoom"]
-			   }
+			},
+			// ui: {
+			// 	components: ["zoom"]
+			//    }
 		});
 		const layerList = new LayerList({
 			view: view
