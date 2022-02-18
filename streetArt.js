@@ -15,7 +15,7 @@ function countryArt() {
         redirect: 'follow'
     };
     
-    fetch("https://street-art.p.rapidapi.com/random/6\"", requestOptions)
+    fetch("https://street-art.p.rapidapi.com/random/1\"", requestOptions)
     .then(response => response.text())
     .then(result => {
         const json = result;

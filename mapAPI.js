@@ -125,3 +125,9 @@ require([
 				view.goTo({target: sourceGraphics, tilt: 40});
 			  }
 	});
+
+	// export {generateFeatureCollection};
+	// export {createFeaturesGraphics};
+	// export {createFeatureLayerFromGraphic};
+	// export {addShapefileToMap};
+	
