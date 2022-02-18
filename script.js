@@ -15,5 +15,4 @@ countryInfo();
 // createFeaturesGraphics();
 // createFeatureLayerFromGraphic();
 // addShapefileToMap()
-=======
 

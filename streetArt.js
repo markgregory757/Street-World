@@ -1,5 +1,3 @@
-
-=======
 const countryArt = (country) => {
 
  const streetArtDIV = document.getElementById("streetArtDIV")
