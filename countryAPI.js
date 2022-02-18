@@ -38,8 +38,10 @@ async function countryInfo() {
     
     data.forEach((country, index) => {
         
+
         if (index < 30) {
 // try hiding country name  style="visibility: hidden"
+
         let tempFlag = `
             <div class="container">
                 <div class="row">

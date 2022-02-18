@@ -1,3 +1,5 @@
+
+=======
 const countryArt = (country) => {
 
  const streetArtDIV = document.getElementById("streetArtDIV")
@@ -24,3 +26,4 @@ const countryArt = (country) => {
 }
 
 export { countryArt }
+
