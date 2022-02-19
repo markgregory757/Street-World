@@ -63,7 +63,6 @@ async function countryInfo() {
     countriesDIV.addEventListener("click", (e) => {
         e.preventDefault();
         streetArtDIV.innerHTML = ""
-        
         if (e.target.className === "col") {
             console.dir(e.target.children[0].innerText)
            countryArt(e.target.children[0].innerText)
