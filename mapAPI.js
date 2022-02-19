@@ -29,7 +29,7 @@ function (
 		  })
 
 		  const fireflyLayer = new TileLayer({
-			url: "https://tiles.arcgis.com/https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/vintage-shaded-relief-basemap//nGt4QxSblgDfeJn9/arcgis/rest/services/HalfEarthFirefly/MapServer",
+			url: "https://tiles.arcgis.com/tiles/nGt4QxSblgDfeJn9/arcgis/rest/services/HalfEarthFirefly/MapServer",
 			title: "half-earth-firefly"
 		  })
 

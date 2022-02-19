@@ -2,6 +2,8 @@ const countryArt = (country) => {
 
  const streetArtDIV = document.getElementById("streetArtDIV")
 
+const mapDIV = document.getElementById('mapDIV')
+console.log(mapDIV);
     fetch(`https://street-art.p.rapidapi.com/country/${country}`, {
         "method": "GET",
         "headers": {
@@ -15,7 +17,12 @@ const countryArt = (country) => {
         result.forEach((streetArtInfo, index) => {
 
             if (index <= 2) {
+
                 streetArtDIV.innerHTML += `<img src=${streetArtInfo.pictLink} style="height: 400px; width: 450px;"/> `
+                mapDIV.innerHTML = `
+                <img src="${streetArtInfo.linkOpenStreetMap}" >
+                `
+                console.log(streetArtInfo.linkOpenStreetMap, 11111111)
             console.log(streetArtInfo.pictLink)
             }
         });
