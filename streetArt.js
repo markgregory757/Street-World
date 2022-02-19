@@ -11,7 +11,6 @@ const countryArt = (country) => {
     })
     .then(response => response.json())
     .then(result => {
-        
         result.forEach((streetArtInfo, index) => {
             if (index <= 2) {
 
