@@ -11,7 +11,6 @@ const countryArt = (country) => {
     })
     .then(response => response.json())
     .then(result => {
-        
         result.forEach((streetArtInfo, index) => {
             if (index <= 2) {
                 streetArtDIV.innerHTML += `<img src=${streetArtInfo.pictLink} style="height: 400px; width: 450px;"/> `
