@@ -17,29 +17,49 @@ async function countryInfo() {
     // });
 
     //Rogers RapidAPI
-    const response = await fetch("https://country-info.p.rapidapi.com/", {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "country-info.p.rapidapi.com",
-            "x-rapidapi-key": "256bdc8139mshc95b18bdc3d05e8p102f0bjsnf45913349eec"
-        }
-    });
-
-    //Elizas RapidAPI
     // const response = await fetch("https://country-info.p.rapidapi.com/", {
     //     "method": "GET",
     //     "headers": {
     //         "x-rapidapi-host": "country-info.p.rapidapi.com",
-    //         "x-rapidapi-key": "da6125f67emshd20909b46c37171p181a6cjsn343f3136cea7"
+    //         "x-rapidapi-key": "256bdc8139mshc95b18bdc3d05e8p102f0bjsnf45913349eec"
     //     }
     // });
+
+    //Elizas RapidAPI
+    const response = await fetch("https://country-info.p.rapidapi.com/", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "country-info.p.rapidapi.com",
+            "x-rapidapi-key": "da6125f67emshd20909b46c37171p181a6cjsn343f3136cea7"
+        }
+    });
 
     const data = await response.json();
     
     data.forEach((country, index) => {
         
-
-        if (index < 30) {
+        if (country.name === "Italy" ||
+            country.name === "United States" ||
+            country.name === "Canada" ||
+            country.name === "Germany" ||
+            country.name === "France" ||
+            country.name === "Belgium" ||
+            country.name === "Australia" ||
+            country.name === "United Kingdom" ||
+            country.name === "Spain" ||
+            country.name === "Mexico" ||
+            country.name === "Thailand" ||
+            country.name === "Turkey" ||
+            country.name === "Mexico" ||
+            country.name === "Thailand" ||
+            country.name === "Greece"||
+            country.name === "Russia" ||
+            country.name === "Japan" ||
+            country.name === "Saudi Arabia" ||
+            country.name === "Poland" ||
+            country.name === "South Korea" ||
+            country.name === "Netherlands" ||
+            country.name === "Ukraine") {
 // try hiding country name  style="visibility: hidden"
 
         let tempFlag = `
