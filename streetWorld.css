@@ -36,3 +36,26 @@ h3 {
     text-align: center;
     font-family: 'Rock Salt', cursive;
 }
+
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sceneContainer {
+    
+    height: 70vh;
+    width: 100vw;
+    background: rgb(0,0,0);
+  }
+  
+  #uploadForm {
+    /* position: absolute; */
+    font-size: 0.8em;
+    font-family: monospace, sans-serif;
+    top: 15px;
+    left: 60px;
+    background: #242424;
+    padding: 6px;
+    color: #69dcff;
+  }
