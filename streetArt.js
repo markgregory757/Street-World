@@ -1,7 +1,7 @@
 const countryArt = (country) => {
 
  const streetArtDIV = document.getElementById("streetArtDIV")
- const mapDIV = document.getElementById("mpaDIV")
+ const mapDIV = document.getElementById("mapDIV")
  
  fetch(`https://street-art.p.rapidapi.com/country/${country}`, {
      "method": "GET",
