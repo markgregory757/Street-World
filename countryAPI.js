@@ -39,27 +39,34 @@ async function countryInfo() {
     data.forEach((country, index) => {
         
         if (country.name === "Italy" ||
-            country.name === "United States" ||
-            country.name === "Canada" ||
-            country.name === "Germany" ||
-            country.name === "France" ||
-            country.name === "Belgium" ||
-            country.name === "Australia" ||
-            country.name === "United Kingdom" ||
-            country.name === "Spain" ||
-            country.name === "Mexico" ||
-            country.name === "Thailand" ||
-            country.name === "Turkey" ||
-            country.name === "Mexico" ||
-            country.name === "Thailand" ||
-            country.name === "Greece"||
-            country.name === "Russia" ||
-            country.name === "Japan" ||
-            country.name === "Saudi Arabia" ||
-            country.name === "Poland" ||
-            country.name === "South Korea" ||
-            country.name === "Netherlands" ||
-            country.name === "Ukraine") {
+        country.name === "Canada" ||
+        country.name === "Germany" ||
+        country.name === "France" ||
+        country.name === "Belgium" ||
+        country.name === "Australia" ||
+        country.name === "United Kingdom" ||
+        country.name === "Spain" ||
+        country.name === "Mexico" ||
+        country.name === "Thailand" ||
+        country.name === "Turkey" ||
+        country.name === "Mexico" ||
+        country.name === "Thailand" ||
+        country.name === "Greece"||
+        country.name === "Russia" ||
+        country.name === "Japan" ||
+        country.name === "Saudi Arabia" ||
+        country.name === "Poland" ||
+        country.name === "South Korea" ||
+        country.name === "Netherlands" ||
+        country.name === "Ukraine" ||
+        country.name === "Ecuador" ||
+        country.name === "Chile" ||
+        country.name === "Argentina" ||
+        country.name === "Israel" ||
+        country.name === "Ireland" ||
+        country.name === "India" ||
+        country.name === "Netherlands" ||
+        country.name === "Brazil") {
 // try hiding country name  style="visibility: hidden"
 
         let tempFlag = `
