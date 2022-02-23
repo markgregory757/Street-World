@@ -46,9 +46,9 @@ h3 {
 body {
     padding-bottom: 100px;
     margin: 10;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5z8-3WshCsE_BWkuj0CSCR3MVTC1WsA8RfA&usqp=CAU');
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkVjhT0UtgCoNF8Dax07qwN8V1kg_LlKXkwA&usqp=CAU');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
   
   #sceneContainer {
