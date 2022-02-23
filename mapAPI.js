@@ -60,13 +60,13 @@ Graphic
 		const view = new SceneView({
 			map: map,
 			container: "sceneContainer", // this line sets it in the sceneContainer in the HTML page.
-			environment: {
-				atmosphereEnabled: false,
-				background: {
-				  type: "color",
-				  color: [0,10,16]
-				}
-			},
+			// environment: {
+			// 	atmosphereEnabled: false,
+			// 	background: {
+			// 	  type: "color",
+			// 	  color: [0,10,16]
+			// 	}
+			// },
 			// ui: {
 			// 	components: ["zoom"]
 			//    }
@@ -75,14 +75,14 @@ Graphic
 			view: view
 		  });
 		  
-		  view.ui.add(layerList, {
-			position: "top-right"
-		  });
+		//   view.ui.add(layerList, {
+		// 	position: "top-right"
+		//   });
 		  const uploadForm = document.getElementById("uploadForm");
 
 		  uploadForm.addEventListener("change", function (event) {
 			const filePath = event.target.value.toLowerCase();
-			//only accept .zip files
+			// only accept .zip files
 			if (filePath.indexOf(".zip") !== -1) {
 				generateFeatureCollection(uploadForm)
 				const generateRequestParams = {
