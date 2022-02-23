@@ -74,7 +74,7 @@ async function countryInfo() {
                 <div class="row">
                     <div class="col" style="font-size: 50px">
                     ${country.flag} 
-                        <span class="countryName" style="font-size: 10px"> 
+                        <span class="countryName" style="font-size: 10px" color > 
                             ${country.name}
                         </span>
                     </div>
